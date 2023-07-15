@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PortfolioUsingCSS</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: rgb(77, 137, 198);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .full {
+            width: 50%;
+            max-width: 1000px;
+            min-height: 100px;
+            background-color: rgb(172, 106, 21);
+            margin: 0px;
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+        .left {
+            background-color: burlywood;
+            padding: 20px;
+        }
+        .right {
+            background-color: rgb(109, 67, 15);
+            padding: 20px;
+        }
+        .image img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+        .contact-details h2 {
+            background-color: rgb(4, 96, 150);
+            color: white;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        .skills h2, .language h2, .hobbies h2 {
+            background-color: rgb(4, 96, 150);
+            color: white;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        .skills ul, .language ul, .hobbies ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        .skills li, .language li, .hobbies li {
+            margin-bottom: 5px;
+        }
+        .name h1 {
+            font-size: 30px;
+            color: white;
+            margin-bottom: 10px;
+        }
+        .title p {
+            color: white;
+            font-weight: bold;
+        }
+        .summary p {
+            color: white;
+        }
+        .experience h2, .education h2, .project h2 {
+            background-color: rgb(4, 96, 150);
+            color: white;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        .experience h3, .education table th, .education table td {
+            color: white;
+        }
+        .project li {
+            margin-bottom: 15px;
+        }
+        .project li h2 {
+            color: white;
+            margin-bottom: 5px;
+        }
+        .project li p {
+            color: white;
+        }
+    </style>
+  
+</head>
+<body>
+    <div class="full">
+        <div class="left">
+            <div class="image">
+                <img src="/paneer.jpg "   alt="Profile Photo"
+                     style="width:100px;height:100px;">
+            </div>
+            <div class="Contact Details">
+                <h2>Contact</h2>
+                <p><b>Email id:</b>spanneer296@gmail.com</p>
+                <p><b>Mobile no :</b>+91-9500973772</p>
+            </div>
+            <div class="Skills">
+                <h2>Skills</h2>
+                <ul>
+                    <li><b>Programming Languages :
+                       Java, C programming, springboot </b></li>
+                    <li><b>Frontend : HTML, CSS,
+                      JavaScript, Angular , react</b></li>
+                    <li><b>Backend : mysql , oracle </b></li>
+                </ul>
+            </div>
+            <div class="Language">
+                <h2>Language</h2>
+                <ul>
+                    <li>English</li>
+                    <li>tamil</li>
+                    <li>Telugu</li>
+                </ul>
+            </div>
+            <div class="Hobbies">
+                <h2>Hobbies</h2>
+                <ul>
+                    <li>singing</li>
+                    <li>running</li>
+                   
+                </ul>
+            </div>
+        </div>
+        <div class="right">
+            <div class="name">
+                <h1>Paneerselvam</h1>
+            </div>
+            <div class="title">
+                <p>Java Full Stack Developer</p>
+            </div>
+            <div class="Summary">
+                <h2>Summary</h2>
+                <p>I am an Bachelor degree graduate with a bachelor's degree in Computer Science.I am passionate about Programming Languages, Robotics and AI. I intend to work within an organization where I wish to add value to myself by having practical exposure to the challenging and creative environment with my acquired skill-set and knowledge.
+                </p>
+            </div>
+            <div class="Experience">
+                <h2>Experience</h2>
+                <h3>Online Tutor </h3>
+                <p>(28-sep-2022 to 28-feb)</p>
+                
+               
+            </div>
+            <div class="Education">
+                <h2>Education</h2>
+                <table>
+                    <tr>
+                        <th>University/College  </th>
+                        <th>Passing year  </th>
+                        <!--*<th>percentage/cgpa</th>-->
+                    </tr>
+                    <tr>
+                        <td>msc</td>
+                        <td>2022</td>
+                        <!--<td>7.14</td>-->
+                    </tr>
+                    <tr>
+                        <td>bsc</td>
+                        <td>2018</td>
+                        <!--<td>89%</td>-->
+                    </tr>
+                </table>
+            </div>
+            <div class="project">
+                <ul>
+                    <li>
+                        <h2>Project1</h2>
+                        <p>This project is based on html
+                          & used React</p>
+                    </li>
+                    <li>
+                        <h2>Project2</h2>
+                        <p>This project is based on html
+                          & used React</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
